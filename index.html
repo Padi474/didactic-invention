@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <title>personal business</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+  </head>
+  <body class="w-screen overflow-x-hidden selection:bg-rose-500 selection:text-white">
+    
+    
+    <header class="w-full bg-picture bg-no-repeat bg-cover transition-all duration-300 ease-in h-[30rem] mx-auto border border-solid border-slate-300 dark:bg-slate-800 relative" id="backg">
+    <div class="md:w-[85%] mx-auto mt-12 p-3 h-auto bg-white drop-shadow-lg">
+      <div class="px-4 md:px-0 h-full mx-auto flex justify-between items-center">
+        <div class="title flex flex-col">
+          <h2 class="text-2xl font-IransansBold">طراح گستر</h2>
+          <h4 class="text-[12px]">طراحی صفحات وب</h4>
+        </div>
+        
+        <!-- Menu links -->
+        <ul id="menu" class="absolute top-0 right-0 px-10 pt-12 pb-6 h-full bg-white !z-999 max-md:shadow-md max-md:min-h-[21rem] md:relative md:flex md:p-0 md:bg-transparent md:flex-row md:space-x-6 transition-transform duration-300 transform translate-x-72 md:translate-x-0">
+          <li class="md:hidden z-90 fixed top-4">
+              <a href="javascript:void(0)" class="text-right text-black text-4xl" onclick="toggleMenu()">&times;</a>
+          </li>
+          <li class="hover:bg-sky-600 hover:text-white text-center px-6 py-4 max-md:px-8 max-md:border-b-2 rounded-md">
+              <a class="opacity-70 hover:opacity-100 duration-300" href="index.html">خانه</a>
+          </li>
+          <li class="hover:bg-sky-600 hover:text-white text-center px-6 py-4 max-md:px-8 max-md:border-b-2 rounded-md cursor-pointer">
+              <a class="opacity-70 hover:opacity-100 duration-300" onclick="getAbout()">درباره ما</a>
+          </li>
+          <li class="hover:bg-sky-600 hover:text-white text-center px-6 py-4 max-md:px-8 max-md:border-b-2 rounded-md">
+              <a class="opacity-70 hover:opacity-100 duration-300" href="services.html">خدمات</a>
+          </li>
+          <li class="hover:bg-sky-600 hover:text-white text-center px-6 py-4 max-md:px-8 max-md:border-b-2 rounded-md cursor-pointer">
+              <a class="opacity-70 hover:opacity-100 duration-300" onclick="getContact()">تماس با ما</a>
+          </li>
+      </ul>
+          
+            <!-- Logo -->
+            <span class="logo h-10 w-10 my-auto m-4 max-md:hidden">
+                <img src="./images/logo.png" alt="logo"
+              /></span>
+            <!-- This is used to open the menu on mobile devices -->
+            <div class="flex items-center md:hidden">
+                <button class="text-black text-4xl font-bold opacity-70 hover:opacity-100 duration-300" onclick="toggleMenu()">&#9776;</button>
+            </div>
+            
+        </div>
+    </div>
+    <div class="header-content w-fit max-md:w-[60%] m-32 flex flex-col flex-wrap overflow-hidden" style="display: block;">
+      <h1 class="text-4xl drop-shadow-textShadow font-semibold text-white max-md:text-2xl p-3" id="header-title">
+        
+      </h1>
+      <p class="max-w-[500px] drop-shadow-textShadow text-white max-md:max-w-[350px] max-md:text-[16px]">
+        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+      </p>
+    </div>
+
+    <div class="h-10 w-[100%] absolute bottom-0 bg-white opacity-50 mx-auto text-white flex items-center justify-center gap-3">
+        
+        <span class="h-2 w-2 border-2 border-black rounded-full inline-block" id="circle"></span>
+        <span class="h-2 w-2 border-2 border-black rounded-full inline-block" id="circle"></span>
+        <span class="h-2 w-2 border-2 border-black rounded-full inline-block" id="circle"></span>
+        <span class="h-2 w-2 border-2 border-black rounded-full inline-block" id="circle"></span>
+
+    </div>
+    </header>
+    <main class="w-[90%] mx-auto">
+      <section class="below-header grid grid-cols-3 gap-x-6 max-lg:grid-cols-1 my-24  wow animate__animated animate__fadeInDown">
+        <div class="flex flex-col justify-center items-center ">
+          <div class="bg-red-400 opacity-80 h-20 w-20 rounded-full text-2xl text-white flex justify-center items-center">
+            <i class="fa fa-asterisk"></i>
+          </div>
+            <h2 class="text-black text-xl font-bold my-4"> ماموریت ما</h2>
+            <p class="text-sm text-slate-600 w-3/4 text-center">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+            <h4 class="text-sm text-slate-600 my-6 hover:text-red-500">  <a href="#">بیشتر بدانید</a></h4>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <div class="bg-green-500 opacity-80 h-20 w-20 rounded-full text-2xl text-white flex justify-center items-center">
+            <i class="fa fa-plane"></i>
+          </div>
+          <h2 class="text-black text-xl font-bold my-4"> تاریخچه ما</h2>
+            <p class="text-sm text-slate-600 w-3/4 text-center">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+            <h4 class="text-sm text-slate-600 my-6 hover:text-red-500"> <a href="#">بیشتر بدانید</a></h4>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <div class="bg-sky-500 opacity-80 h-20 w-20 rounded-full text-2xl text-white flex justify-center items-center">
+            <i class="fa fa-star"></i>
+          </div>
+          <h2 class="text-black text-xl font-bold my-4"> دستاوردهای ما</h2>
+            <p class="text-sm text-slate-600 w-3/4 text-center">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+            <h4 class="text-sm text-slate-600 my-6 hover:text-red-500"> <a href="#">بیشتر بدانید</a></h4>
+        </div>
+      </section>
+
+      <section class="bg-sky-200 p-14 pb-24 mb-10 ">
+        <div class="flex flex-col justify-center items-center w-full  wow animate__animated animate__fadeInDown">
+          <h2 class=" text-2xl font-IransansBold max-lg:mt-12">برجسته ترین ویژگی ها</h2>
+          <p class="my-7 text-sm pb-8 text-center">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+          </p>
+        </div>
+        <div class="grid grid-cols-3 gap-6 mx-4 max-lg:grid-cols-1 max-lg:gap-28 max-md:gap-32">
+          <div class=' w-full h-60'>
+            <img src="./images/services-1.webp" alt="customer" class="h-52 w-full transition-colors duration-500 hover:border-sky-600 hover:border-4">
+            <div class="relative bg-white p-8 max-md:p-4 mx-auto bottom-4 w-[90%]  wow animate__animated animate__fadeInDown">
+              <h2 class="mb-2">خدمات مشتری</h2>
+              <p class="text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+            </div>
+          </div>
+          <div class="w-full h-60 ">
+            <img src="./images/services-2.webp" alt="customer" class="h-52 w-full transition-colors duration-500 hover:border-sky-600 hover:border-4">
+            <div class="relative bg-white p-8 max-md:p-4 mx-auto bottom-4 w-[90%]  wow animate__animated animate__fadeInDown">
+              <h2 class="mb-2">دسترسی آسان</h2>
+              <p class="text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+          </div>
+          </div>
+          <div class=' w-full h-60 '>
+            <img src="./images/services-3.webp" alt="customer" class="h-52 w-full transition-colors duration-500 hover:border-sky-600 hover:border-4">
+            <div class="relative bg-white p-8 max-md:p-4 mx-auto bottom-4 w-[90%]  wow animate__animated animate__fadeInDown">
+              <h2 class="mb-2"> پشتیبانی یکساله</h2>
+              <p class="text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+            </div>
+          </div>
+        </div>
+        <div class="mx-auto mt-8  flex justify-center">
+          <a href="#mainSec">
+          <button class="about p-4 rounded-md relative bottom-0 mt-28 bg-sky-600 text-white hover:bg-white hover:text-black hover:shadow-sm">
+            بیشتر بدانید</button></a>
+        </div>
+      </section>
+
+      <section class="bg-[#162342] my-14 min-h-80 flex flex-col items-center justify-center text-white p-4">
+        <h2 class="text-2xl  wow animate__animated animate__fadeInDown">تمیز، زیبا، سریع، چند منظوره و منعطف</h2>
+        <p class="text-center mt-4 text-sm  wow animate__animated animate__fadeInDown">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+        <div class="mx-auto mt-12 flex justify-around w-1/2 max-md:w-2/3">
+          <button class="service py-4 px-6 rounded-md bg-sky-600 text-white hover:bg-white hover:text-black max-md:text-sm max-md:px-4"><a href="./services.html">خدمات ما</a></button>
+          <button class="about py-4 px-6 rounded-md bg-white text-black hover:bg-sky-600 hover:text-white max-md:text-sm max-md:px-4" onclick="getAbout()">درباره ما</button>
+        </div>
+      </section>
+
+      <section class="px-14">
+        <div class="flex flex-col justify-center items-center w-full">
+          <h2 class=" text-2xl font-IransansBold max-lg:mt-12  wow animate__animated animate__fadeInDown" id="mainSec">خدمات ما</h2>
+          <p class="mt-4 text-sm text-center  wow animate__animated animate__fadeInDown">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+          </p>
+        </div>
+        <div>
+        <div class="slider">
+
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <!-- <div class="swiper-slide">
+                <div class=' w-[100%] h-[70%]'>
+                  <img src="./images/services-1.webp" alt="customer" class="h-52 w-full transition-colors duration-500 hover:border-sky-600 hover:border-4">
+                  <div class="relative bg-white p-4 mx-auto bottom-4 w-[90%]">
+                    <h2 class="mb-2 hover:text-red-600 cursor-pointer max-md:text-[16px]"><a href="#">خدمات مشتری</a></h2> 
+                    </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                <div class=' w-[100%] h-[70%]'>
+                  <img src="./images/services-2.webp" alt="customer" class="h-52 w-full transition-colors duration-500 hover:border-sky-600 hover:border-4">
+                  <div class="relative bg-white p-4 mx-auto bottom-4 w-[90%]">
+                    <h2 class="mb-2 hover:text-red-600 max-md:text-[16px]"><a href="#">خدمات مشتری</a></h2> 
+                    </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                <div class=' w-[100%] h-[70%]'>
+                  <img src="./images/services-3.webp" alt="customer" class="h-52 w-full transition-colors duration-500 hover:border-sky-600 hover:border-4">
+                  <div class="relative bg-white p-4 mx-auto bottom-4 w-[90%]">
+                    <h2 class="mb-2 hover:text-red-600 max-md:text-[16px]"><a href="#">خدمات مشتری</a></h2> 
+                    </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div> -->
+            </div>
+            <div class="swiper-pagination mt-2 bottom-[-8px] h-4"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      
+        
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      
+        <!-- Initialize Swiper -->
+        <!-- <script>
+         
+        </script> -->
+      </div>
+      </section>
+      <section class="mb-10 p-14">
+        <div class="flex flex-col justify-center items-center w-full">
+          <h2 class=" text-2xl font-IransansBold max-lg:mt-12  wow animate__animated animate__fadeInDown">گالری تصاویر</h2>
+          <p class="mt-4 mb-7 pb-8 text-sm text-center selection:bg-rose-500 wow animate__animated animate__fadeInDown">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+          </p>
+        </div>
+        <div class="grid grid-cols-3 gap-2 max-lg:grid-cols-2 max-md:grid-cols-1 ">
+          <div class="gallary-item row-span-2">
+            <img src="./images/gallary-0.webp" alt="gallary">
+          </div>
+          <div class="gallary-item">
+            <img src="./images/gallary-1.webp" alt="gallary">
+          </div>
+          <div class="gallary-item">
+            <img src="./images/gallary-2.webp" alt="gallary">
+          </div>
+          <div class="gallary-item">
+            <img src="./images/gallary-3.webp" alt="gallary">
+          </div>
+          <div class="gallary-item">
+            <img src="./images/gallary-4.webp" alt="gallary">
+          </div>
+        </div>
+      </section>
+      <button type="button" class="goUp text-white bg-blue-700 hover:bg-blue-800 -rotate-90 focus:outline-none font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center me-2 transition-opacity bottom-8" onclick="goUp()">
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+        </svg>
+        <span class="sr-only">Icon description</span>
+        </button>
+    </main>
+    <footer class="w-full min-h-40 bg-[#162342] py-8 text-slate-400 px-16" id="address">
+      <div class="footer-container w-[85%] mx-auto grid grid-cols-3 gap-2 max-xl:grid-cols-2 max-lg:grid-cols-2 max-md:grid-cols-1 py-8 max-lg:gap-4">
+        <div class="address flex flex-col gap-1 text-sm w-fit">
+          <span class="text-xl text-white pb-3">آدرس: </span>
+          <p>
+            شیراز- خیابان شهید رجایی - کوچه 25م - پلاک 9
+          </p>
+          <span class="mt-3 text-white text-lg">تلفن:</span>
+          <p>
+            0713-6345566<br />
+            0713-6345567<br />
+            09172000951
+          </p>
+          <p>info@gmail.com</p>
+        </div>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3467.5153489457066!2d52.45681623814529!3d29.646816441292845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1711906136937!5m2!1sen!2s"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="about pb-4 text-center px-4">
+          <span class="text-white text-xl"> درباره ما : </span><br/>
+          <p class="text-sm mt-4 mr-4">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت و در زبان فارسی ایجاد کرد، طراحی اساسا مورد استفاده قرار گیرد.
+          </p>
+        </div>
+      </div>
+      <div class="h-auto flex justify-center gap-6">
+        <span><a href="https://linkedin.com/#"><img src="images/linkedin.svg" alt="linkedin" width="30px"> </a></span>
+        <span><a href="https://instagram.com/#"><img src="images/instagram.svg" alt="instagram" width="30px"> </a></span>
+        <span><a href="https://t.me/#"><img src="images/telegram.svg" alt="telegram" width="30px"> </a></span>
+      </div>
+      <div class="copyright bg-opacity-45 bg-slate-700 w-[85%] p-4 mx-auto mt-4">
+        <p class="text-sm text- my-auto text-center">تمامی حقوق مادی و معنوی محفوظ است</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+      </script>
+    <script src="js/js.js"></script>
+
+  </body>
+</html>
+

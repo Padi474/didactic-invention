@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    @font-face {
+        font-family: 'iranSans';
+        src: url(../fonts/IRANSansWeb.woff) format(woff);
+    }
+    @font-face {
+        font-family: 'IransansBold';
+        src: url(../fonts/IRANSansWeb_Bold.woff) format(woff);
+    }
+    body{
+        @apply font-Iransans text-lg mx-auto selection:bg-rose-700
+    }
+   
+    
+}
+@layer components{
+    .slider {
+        @apply w-full h-96 max-h-[40rem] 
+    }
+    .swiper {
+        @apply w-full h-full
+    }
+    .swiper-slide {
+        @apply text-center text-xl bg-white flex flex-col justify-center items-center shadow-lg
+    }
+    .swiper-slide img {
+        @apply block w-full h-full object-cover
+    }
+    .gallary-item {
+        @apply w-full min-h-52 hover:scale-105 transition-all duration-500
+    }
+    .gallary-item img {
+        @apply h-full w-full
+    }
+    
+}

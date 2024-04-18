@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+      theme: {
+        extend: {
+            fontFamily: {
+        'Iransans': "iranSans",
+        'IransansBold': `IransansBold`,
+      },
+        }
+      }
+    }
+    </script>
+    <style type="text/tailwindcss">
+        @layer base {
+            @font-face {
+        font-family: 'iranSans';
+        src: url(./fonts/IRANSansWeb.woff) format(woff)
+    }
+    
+    body{
+        @apply font-Iransans text-lg mx-auto selection:bg-rose-700 selection:text-white
+    }
+        }
+        @layer components {
+          .menue {
+            @apply fixed top-0 z-[100] border-b-4 max-md:pt-6
+          }
+        }
+      </style>
+    <title>weblog</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+</head>
+<body class="w-screen font-Iransans overflow-x-hidden">
+ 
+
+    <header class="bg-[#162342] min-h-72 py-10 relative">
+        <div class="bg-white w-full flex justify-between min-h-12 px-10 py-3" id="menu-bar">
+            
+          <span class="flex flex-col items-center">
+            <h2 class="text-2xl font-Iransans px-2 font-bold">طراح گستر</h2>
+            <h4 class="text-[12px]">طراحی صفحات وب</h4>
+          </span>
+                <ul id="menu" class="fixed top-0 right-0 px-10 pt-12 pb-6 h-full bg-white !z-50 max-md:shadow-md max-md:min-h-80 md:relative md:flex md:p-0 md:bg-transparent md:flex-row md:space-x-6 transition-transform duration-300 transform translate-x-72 md:translate-x-0">
+                  <li class="md:hidden z-90 fixed top-4 ">
+                      <a href="javascript:void(0)" class="text-right text-black text-4xl" onclick="toggleMenu()">&times;</a>
+                  </li>
+                  <li class="hover:bg-sky-600 hover:text-white text-center px-6 py-4 max-md:px-8 max-md:border-b-2 rounded-md">
+                      <a class="opacity-70 hover:opacity-100 duration-300" href="index.html">خانه</a>
+                  </li>
+                  <li class="hover:bg-sky-600 hover:text-white text-center px-6 py-4 max-md:px-8 max-md:border-b-2 rounded-md cursor-pointer">
+                      <a class="opacity-70 hover:opacity-100 duration-300" onclick="getAbout()">درباره ما</a>
+                  </li>
+                  <li class="hover:bg-sky-600 hover:text-white text-center px-6 py-4 max-md:px-8 max-md:border-b-2 rounded-md">
+                      <a class="opacity-70 hover:opacity-100 duration-300" href="services.html">خدمات</a>
+                  </li>
+                  <li class="hover:bg-sky-600 hover:text-white text-center px-6 py-4 max-md:px-8 max-md:border-b-2 rounded-md cursor-pointer">
+                      <a class="opacity-70 hover:opacity-100 duration-300" onclick="getContact()">تماس با ما</a>
+                  </li>
+              </ul>
+              
+                <span class="logo my-auto m-4 flex items-center max-md:hidden">
+                    <img src="./images/logo.png" alt="logo" class="h-10"/>
+                </span>
+                
+
+                </span>
+                <div class="flex items-center md:hidden">
+                    <button class="text-black text-4xl font-bold opacity-70 hover:opacity-100 duration-300" onclick="toggleMenu()">&#9776;</button>
+                </div>
+        </div>
+        <span class="absolute right-20 bottom-[-3rem] bg-white h-24 w-72 inline-block shadow-2xl">
+            <h1 class="flex items-center justify-center h-full text-3xl font-extrabold tracking-widest" id="pageTitle">
+                خدمات ما
+            </h1>
+        </span>
+    </header>
+
+    <main class="w-[85%] flex flex-col gap-4 min-h-52 pb-16 pt-20 px-4 mx-auto mt-8" id="main-section"> 
+      <!-- <div class="m-6 my-8 shadow-xl p-4">
+        <span class="inline-block p-4">
+          <h2 class="title text-3xl">
+            عنوان
+          </h2>
+        </span>
+        <div class="px-4 flex items-center justify-center gap-6 max-md:flex-col">
+          <p class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus minima, earum vitae dolorem fugiat voluptas esse sequi. Aspernatur saepe nihil similique ad vitae, odit velit temporibus maiores. Enim, adipisci vero!
+          </p>
+          <img src="./images/services-1.webp" alt="" class="w-72 h-auto">
+        </div>
+      </div> -->
+
+    </main>
+    <footer class="w-full min-h-40 bg-[#162342] py-8 text-slate-400 px-16" id="address" >
+        <div class="footer-container w-[85%] mx-auto grid grid-cols-3 gap-2 max-lg:grid-cols-2 max-md:grid-cols-1 py-8 max-lg:gap-4">
+          <div class="address flex flex-col gap-1 text-sm w-fit">
+            <span class="text-xl text-white pb-3">آدرس: </span>
+            <p>
+              شیراز- خیابان شهید رجایی - کوچه 25م - پلاک 9
+            </p>
+            <span class="mt-3 text-white text-lg">تلفن:</span>
+            <p>
+              0713-6345566<br />
+              0713-6345567<br />
+              09172000951
+            </p>
+            <p>info@gmail.com</p>
+          </div>
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3467.5153489457066!2d52.45681623814529!3d29.646816441292845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1711906136937!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="about pb-4 text-center px-4">
+            <span class="text-white text-xl"> درباره ما : </span><br/>
+            <p class="text-sm mt-4 mr-4">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت و در زبان فارسی ایجاد کرد، طراحی اساسا مورد استفاده قرار گیرد.
+            </p>
+          </div>
+        </div>
+        <div class="h-auto flex justify-center gap-6">
+          <span><a href="https://linkedin.com/#"><img src="images/linkedin.svg" alt="linkedin" width="30px"> </a></span>
+          <span><a href="https://instagram.com/#"><img src="images/instagram.svg" alt="instagram" width="30px"> </a></span>
+          <span><a href="https://t.me/#"><img src="images/telegram.svg" alt="telegram" width="30px"> </a></span>
+        </div>
+        <div class="copyright bg-opacity-45 bg-slate-700 w-[85%] p-4 mx-auto mt-4">
+          <p class="text-sm text- my-auto text-center">تمامی حقوق مادی و معنوی محفوظ است</p>
+        </div>
+      </footer>
+    <script src="js/blogjs.js"></script>
+</body>
+</html>
